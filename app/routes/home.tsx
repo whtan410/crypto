@@ -6,7 +6,7 @@ const { Title, Paragraph } = Typography;
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Casino Banking System" },
+    { title: "CBS" },
     { name: "description", content: "Casino Banking Management System" },
   ];
 }
@@ -29,23 +29,29 @@ export default function Home() {
             <Link to="/deposit-history">
               <a style={{ fontSize: '16px' }}>Deposit History - Filter Demo</a>
             </Link>
-            <Link to="/accounts">
+            <Link to="/account">
               <a style={{ fontSize: '16px' }}>Account Management - Filter with Create Button Demo</a>
             </Link>
-            <Link to="/mock-transaction">
-              <a style={{ fontSize: '16px' }}>Mock Transaction - Full Page Demo</a>
+            <Link to="/role" style={{ fontSize: '16px' }}>
+              User Role Management - Role Tab Demo
             </Link>
-            <Link to="/mock-balance-update">
-              <a style={{ fontSize: '16px' }}>Mock Balance Update - Full Page Demo</a>
+            <Link to="/mock-tabs" style={{ fontSize: '16px' }}>
+              Mock Workspace - Chrome Tab Demo
             </Link>
-            <Link to="/mock-withdrawal-request">
-              <a style={{ fontSize: '16px' }}>Mock Withdrawal Request - Full Page Demo</a>
+            <Link to="/mock-transaction" style={{ fontSize: '16px' }}>
+              Mock Transaction (opens tab in workspace)
             </Link>
-            <Link to="/mock-deposit-request">
-              <a style={{ fontSize: '16px' }}>Mock Deposit Request - Full Page Demo</a>
+            <Link to="/mock-balance-update" style={{ fontSize: '16px' }}>
+              Mock Balance Update (opens tab in workspace)
             </Link>
-            <Link to="/mock-freeze">
-              <a style={{ fontSize: '16px' }}>Mock Freeze - Full Page Demo</a>
+            <Link to="/mock-withdrawal-request" style={{ fontSize: '16px' }}>
+              Mock Withdrawal Request (opens tab in workspace)
+            </Link>
+            <Link to="/mock-deposit-request" style={{ fontSize: '16px' }}>
+              Mock Deposit Request (opens tab in workspace)
+            </Link>
+            <Link to="/mock-freeze" style={{ fontSize: '16px' }}>
+              Mock Freeze (opens tab in workspace)
             </Link>
           </Space>
         </Card>

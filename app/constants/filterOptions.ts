@@ -16,14 +16,13 @@ export const DEPOSIT_STATUS_OPTIONS = [
 
 export const WITHDRAWAL_STATUS_OPTIONS = [
   { label: 'All', value: '' },
-  { label: 'Matched', value: 'MATCHED' },
-  { label: 'Failed', value: 'FAILED' },
-  { label: 'Expired', value: 'EXPIRED' },
-  { label: 'Requested', value: 'REQUESTED' },
+  { label: 'Pending', value: 'PENDING' },
+  { label: 'Approved', value: 'APPROVED' },
   { label: 'Processing', value: 'PROCESSING' },
   { label: 'Completed', value: 'COMPLETED' },
+  { label: 'Rejected', value: 'REJECTED' },
+  { label: 'Failed', value: 'FAILED' },
   { label: 'Cancelled', value: 'CANCELLED' },
-  { label: 'Pending Review', value: 'PENDING_REVIEW' },
 ];
 
 export const ACCOUNT_STATUS_OPTIONS = [
@@ -98,4 +97,11 @@ export const CURRENCY_OPTIONS = [
   { label: 'THB', value: 'THB' },
   { label: 'USD', value: 'USD' },
   { label: 'EUR', value: 'EUR' },
+];
+
+export const TRANSACTION_TYPE_OPTIONS = [
+  { label: 'All', value: '' },
+  { label: 'Deposit', value: 'DEPOSIT' },
+  { label: 'Withdrawal', value: 'WITHDRAWAL' },
+  { label: 'Transfer', value: 'TRANSFER' },
 ];

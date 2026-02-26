@@ -6,13 +6,20 @@
 import React, { useState } from 'react';
 import { Typography, Card, message } from 'antd';
 import { TopNavigationPanel } from '../components/TopNavigationPanel';
+import { useNavigate } from 'react-router';
 
 const { Title, Paragraph, Text } = Typography;
 
 export default function NavigationDemo() {
   const [lastClicked, setLastClicked] = useState('');
+  const navigate = useNavigate();
 
   const handleMenuClick = (key: string) => {
+    if (key === 'account') {
+      navigate('/account');
+      return;
+    }
+
     console.log('Menu clicked:', key);
     setLastClicked(key);
     message.info(`Navigated to: ${key}`);
